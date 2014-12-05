@@ -1,0 +1,13 @@
+apply plugin: 'java'
+apply plugin: 'application'
+apply plugin: 'eclipse'
+ 
+mainClassName = System.getProperty("mainClass")
+ 
+repositories {
+    mavenCentral()
+}
+ 
+dependencies {
+    compile 'org.springframework:spring-context:4.0.5.RELEASE'
+}
